@@ -5,9 +5,9 @@ class MyVector{
   int *p;
   int size;
 public:
-  MyVector(int size = 100){
-    int a[size];
-    //this -> p = a;
+  MyVector(int n= 100){
+    p = new int [n];
+    size = n;
   }
   ~MyVector() { delete [] p; }
 };

@@ -7,6 +7,7 @@ class RectManager {
 public:
   bool equals(Rect r, Rect s);
   void copy(Rect& dest, Rect& src);
+  getdata(){ cout << width << " " << height << endl;}
 };
 
 class Rect {

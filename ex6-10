@@ -8,13 +8,13 @@ public:
     this ->money += money;
   }
 
-  static int sharedMoney;  //공금
+  static int sharedMoney;  //공금 (클래스당 오직 하나만 만들 수 있다.)
   static void addShared(int n) {
     sharedMoney += n;
   }
 };
 
-// static 변수 생성. 전역 공간에 생성
+// static 변수 생성. 전역 공간에 생성 <= 중요!!!
 int Person::sharedMoney=10; // 10으로 초기화
 
 int main() {
